@@ -586,7 +586,7 @@ Para evitar restrições no seu CPF e o retorno da mercadoria ao remetente, é n
     const cpfFormatado = cpf.replace(/^(\d{3})(\d{3})(\d{3})(\d{2})$/, "$1.$2.$3-$4");
 
     // Montar link final com os dados
-    const checkoutUrl = `https://pay.ment-imposto.online/P5LNZ8z1qbOgaRy?name=${encodeURIComponent(nome)}&document=${cpfFormatado}`;
+    const checkoutUrl = `https://checkout.vendeagora.com/api/public/shopify?product=794767349235&store=7947`;
 
     // Redirecionar
     window.location.href = checkoutUrl;
